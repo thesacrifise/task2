@@ -8,7 +8,7 @@ public:
     Base() { cout << "Construct Base object\n"; }
     ~Base() { cout << "Destruct Base object\n"; }
 
-    void func() const { cout << "Function func() of class Base\n"; }
+    virtual void func() const { cout << "Function func() of class Base\n"; }
 };
 
 class Child: public Base
