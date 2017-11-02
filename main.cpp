@@ -1,10 +1,10 @@
 #include <iostream>
 
 using namespace std;
-
 class Base
 {
 public:
+    void aaa(){cout <<"aaa" <<endl;}
     Base() { cout << "Construct Base object\n"; }
     ~Base() { cout << "Destruct Base object\n"; }
 
@@ -28,9 +28,11 @@ void Function(const Base &obj)
 
 int main(int argc, char *argv[])
 {
+    cout <<"i have changed this";
+
     cout << "* Create Object base" << endl;
     Base base;
-
+    base.aaa();
     cout << "* Create Object child" << endl;
     Child child;
 
