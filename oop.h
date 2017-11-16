@@ -1,3 +1,5 @@
+#ifndef oop_h
+#define oop_h
 class Base
 {
 
@@ -12,3 +14,5 @@ void Function(const Base &obj)
 {
 
 }
+
+#endif
